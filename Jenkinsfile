@@ -6,7 +6,7 @@ node {
 }
 
 def imageBuild(containerName, tag, dockerUser){
-    sh "sudo docker build -t $dockerUser/$containerName:$tag ."
+    sh "docker build -t $dockerUser/$containerName:$tag ."
     echo "Image build complete"
 }
 
