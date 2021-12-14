@@ -17,7 +17,7 @@ pipeline {
 
         stage('Image Build') {
             steps {
-                imageBuild("SEC","Latest","sckn")
+                imageBuild("repository","Latest","sckn")
             }
         }
     }
