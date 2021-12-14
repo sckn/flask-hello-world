@@ -16,3 +16,7 @@ pipeline {
         }
     }
 }
+def imageBuild(containerName, tag, dockerUser){
+    sh "sudo docker build -t $dockerUser/$containerName:$tag ."
+    echo "Image build complete"
+}
