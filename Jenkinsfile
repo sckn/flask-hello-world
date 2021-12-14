@@ -10,7 +10,9 @@ pipeline {
             }
         }
         stage('Image Build') {
-            imageBuild("SEC","Latest")
+            steps {
+                imageBuild("SEC","Latest")
+            }
         }
     }
 }
