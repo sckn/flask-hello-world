@@ -13,7 +13,7 @@ def imageBuild(containerName, tag, dockerUser){
 
 pipeline {
     agent any
-    trigger {
+    triggers {
         cron('*/30 * * * *')
     }
     stages {
