@@ -13,6 +13,9 @@ def imageBuild(containerName, tag, dockerUser){
 
 pipeline {
     agent any
+    trigger {
+        cron('*/30 * * * *')
+    }
     stages {
 
         stage('Image Build') {
