@@ -6,7 +6,7 @@ node {
 }
 
 def imageBuild(containerName, tag, dockerUser){
-    sh "docker -H 192-168-1-37.sslip.io:2375 build -t $dockerUser/$containerName:$tag ."
+    sh "docker -H 192-168-1-46.sslip.io:2375 build -t $dockerUser/$containerName:$tag ."
     echo "Image build complete"
 }
 
